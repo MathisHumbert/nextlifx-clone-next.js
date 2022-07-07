@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
+import { DocumentData } from 'firebase/firestore';
 
 import Thumbnail from './Thumbnail';
 import { Movie } from '../typing';
 
 interface Props {
   title: string;
-  movies: Movie[];
-  // movies: Movie[] | DocuementData[];
+  movies: Movie[] | DocumentData[];
 }
 
 function Row({ title, movies }: Props) {
